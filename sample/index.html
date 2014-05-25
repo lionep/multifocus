@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test multi-focus</title>
+    <title>Sample multifocus.js</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font-family: helvetica, arial, sans-serif;
+        color:#222;
+      }
+    </style>
     <script type="text/javascript" src="../scripts/multifocus.js"></script>
   </head>
   <body>
+    <h1>Multifocus.js demo</h1>
+  
+    <!-- Zone -->    
     <div id="zone" style="margin-left:20px; margin-top:20px;"></div>
+
+    <p>
+      Click on a blurred part of the image to get it sharp.
+    </p>
+
+    <p>
+      More information on the <a href="https://github.com/lionep/multifocus/">github repo</a>.
+    </p>
+
     <script type="text/javascript">
       var mfc = new MultiFocus({
         container: document.getElementById('zone'),

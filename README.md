@@ -6,6 +6,14 @@ This library allows the user to produce a "click to focus" image, with a set of 
 
 ## Usage
 
+Import `multifocus.js` in your html 
+
+```HTML
+<script type="text/javascript" src="multifocus.js"></script>
+```
+
+Then initialize the library in your JS code
+
 ```JAVASCRIPT
 var myzone = document.getElementById('myzone');
 

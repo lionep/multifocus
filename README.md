@@ -42,3 +42,4 @@ All coordinates x1, y1, x2, y2 should be set in percentage of the width or heigh
 
 ## Sample 
 
+[Sample](http://htmlpreview.github.io/?https://github.com/lionep/multifocus/blob/master/sample/index.html)

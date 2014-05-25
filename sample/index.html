@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test multi-focus</title>
+    <script type="text/javascript" src="../scripts/multifocus.js"></script>
+  </head>
+  <body>
+    <div id="zone" style="margin-left:20px; margin-top:20px;"></div>
+    <script type="text/javascript">
+      var mfc = new MultiFocus({
+        container: document.getElementById('zone'),
+        width: 600,
+        height: 400,
+        preload: true,
+        speed: 50,
+        images: [
+          {
+            src: 'images/01.jpg'
+          },
+          {
+            src: 'images/02.jpg'
+          },
+          {
+            src: 'images/03.jpg'
+          },
+          {
+            src: 'images/04.jpg',
+            focus: [
+              {
+                x1: 0,
+                y1: 0,
+                x2: 77/600,
+                y2: 125/400
+              },
+              {
+                x1: 77/600,
+                y1: 0,
+                x2: 197/600,
+                y2: 93/400
+              },
+              {
+                x1: 197/600,
+                y1: 0,
+                x2: 377/600,
+                y2: 148/400
+              },
+              {
+                x1: 377/600,
+                y1: 0,
+                x2: 485/600,
+                y2: 76/400
+              },
+              {
+                x1: 485/600,
+                y1: 0,
+                x2: 600/600,
+                y2: 159/400
+              }
+            ]
+          },
+          {
+            src: 'images/05.jpg'
+          },
+          {
+            src: 'images/06.jpg'
+          },
+          {
+            src: 'images/07.jpg',
+            focus: [
+              {
+                x1: 205/600,
+                y1: 143/400,
+                x2: 336/600,
+                y2: 184/400
+              }
+            ]
+          },
+          {
+            src: 'images/08.jpg'
+          },
+          {
+            src: 'images/09.jpg'
+          },
+          {
+            src: 'images/10.jpg',
+            focus: [
+              {
+                x1: 375/600,
+                y1: 75/400,
+                x2: 499/600,
+                y2: 154/400
+              }
+            ]
+          },
+          {
+            src: 'images/11.jpg',
+            focus: [
+              {
+                x1: 64/600,
+                y1: 86/400,
+                x2: 199/600,
+                y2: 276/400
+              }
+            ]
+          },
+          {
+            src: 'images/12.jpg'
+          },
+          {
+            src: 'images/13.jpg'
+          },
+          {
+            src: 'images/14.jpg'
+          },
+          {
+            src: 'images/15.jpg',
+            focus: [
+              {
+                x1: 340/600,
+                y1: 154/400,
+                x2: 519/600,
+                y2: 310/400
+              }
+            ]
+          },
+          {
+            src: 'images/16.jpg'
+          },
+          {
+            src: 'images/17.jpg'
+          },
+          {
+            src: 'images/18.jpg'
+          },
+          {
+            src: 'images/19.jpg'
+          },
+          {
+            src: 'images/20.jpg'
+          },
+          {
+            src: 'images/21.jpg'
+          },
+          {
+            src: 'images/22.jpg'
+          },
+          {
+            src: 'images/23.jpg'
+          },
+          {
+            src: 'images/24.jpg',
+            focus: [
+              {
+                x1: 484/600,
+                y1: 282/400,
+                x2: 600/600,
+                y2: 360/400
+              }
+            ]
+          },
+          {
+            src: 'images/25.jpg'
+          }
+        ]
+      })
+      .init();
+    </script>
+  </body>
+</html>
